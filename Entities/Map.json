@@ -1,0 +1,47 @@
+{
+  "name": "Map",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the map"
+    },
+    "creator": {
+      "type": "string",
+      "description": "Map creator's Discord username"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the map"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "online",
+        "maintenance",
+        "down"
+      ],
+      "default": "online",
+      "description": "Current status of the map"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "URL to map thumbnail image"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Map release date"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the map is featured"
+    }
+  },
+  "required": [
+    "name",
+    "creator",
+    "status"
+  ]
+}
