@@ -1,0 +1,36 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "discord_username": {
+      "type": "string",
+      "description": "Discord username"
+    },
+    "role": {
+      "type": "string",
+      "description": "Role in Project: JJS"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short bio about the member"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "URL to avatar image"
+    },
+    "is_owner": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the member is the owner"
+    },
+    "join_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date joined the team"
+    }
+  },
+  "required": [
+    "discord_username",
+    "role"
+  ]
+}
